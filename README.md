@@ -44,7 +44,7 @@ where $X_{1,t},\ldots,X_{N,t}$ are financial controls observed at $t$, and $SN_t
 * Missing values may appear as `-1` and are treated as missing.
 * A provisional marker may apply to the most recent months.
 * License: **CC BY-NC 4.0** (attribution required; non-commercial).
-  (See SILSO documentation in the notebook/comments.)
+  (See SILSO documentation in the notebook)
 
 ---
 
@@ -129,30 +129,9 @@ W_T = \exp\left(\sum_{t\le T} r_t\right),
 
 normalized to start at 1. This section is intentionally minimal (no trading frictions) to ask whether the signal is strong enough to show up under a basic implementation.
 
----
-
-## Results
-
-**In-sample (Model B):**
-
-* $\hat\gamma$ is positive but **not statistically robust** under HAC (above conventional 5% thresholds).
-
-**Stability:**
-
-* Subsample estimates of $\gamma$ show **sign / magnitude drift** across eras (suggesting regime dependence rather than a persistent effect).
-
-**Out-of-sample:**
-
-* Adding sunspots yields **negative OOS $R^2$** and Clark–West is **not supportive**, indicating **no incremental forecast benefit** relative to controls alone.
-
-**Allocation lens:**
-
-* The forecast-driven monthly rule does **not** outperform buy-and-hold over the evaluated OOS window in this implementation.
-
-> Interpretation: Under this specification and dataset, sunspots look like an **exploratory feature** rather than a standalone signal. Any claim of predictability would require stronger OOS evidence and stability.
 
 ---
-## Results snapshot (from the current run)
+## Results snapshot
 
 ### In-sample (HAC / Newey–West)
 - Estimated $\gamma$ (sunspots) is **positive**, but **not statistically robust** at conventional levels (HAC $p$-value above 5% in the full sample).
@@ -168,7 +147,7 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
   - Clark–West test is **not supportive** (one-sided $p$ not small)
 
 ### Allocation lens
-- A simple monthly long/cash rule driven by the augmented forecast **does not outperform** buy-and-hold over the evaluated OOS window (lower annualized mean log return and Sharpe in the current run).
+- A simple monthly long/cash rule driven by the augmented forecast **does not outperform** buy-and-hold over the evaluated OOS window (lower annualized mean log return and Sharpe).
 
 ---
 
