@@ -1,7 +1,6 @@
+# Sunspots & Equity Returns 
 
-# Sunspots & Equity Returns (Monthly, Predictive Regression + OOS Tests)
-
-This repository contains a research notebook that evaluates whether **monthly sunspot activity** contains **incremental predictive information** for **next-month** S&P 500 returns, **conditional on** a set of standard financial controls.
+This repository investigates whether **monthly sunspot activity** contains **incremental predictive information** for **next-month S&P 500 returns**, **conditional on standard financial controls**.
 
 > **One-sentence summary:** After controlling for standard predictors, sunspots show **weak / unstable** in-sample association and **do not improve** out-of-sample forecasts in this implementation.
 
