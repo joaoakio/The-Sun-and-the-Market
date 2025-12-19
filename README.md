@@ -153,36 +153,6 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 
 ---
 
-## Results (summary + interpretation)
-
-This section summarizes what the notebook finds **under the strict $t \rightarrow t{+}1$ timing convention** (predictors measured at the end of month $t$, forecasting the return earned over month $t{+}1$), and how to interpret those findings in a “research + investable lens” sense.
-
-### 1) In-sample evidence (Model B: controls + sunspots)
-
-- The estimated sunspot slope $\hat\gamma$ is **positive** in the full sample, meaning that (in-sample) higher sunspot activity in month $t$ is associated with slightly higher $r_{t+1}$ *conditional on controls*.
-- However, the HAC / Newey–West $p$-value is **above conventional 5% thresholds**, so the evidence is **not statistically robust** once we account for heteroskedasticity and mild serial correlation in monthly data.
-
-**Interpretation:** In-sample, the direction is *suggestive* but the magnitude is small and the uncertainty is large. This is exactly the scenario where it is easy to over-interpret noise—so we treat in-sample significance as a *screen*, not a decision rule.
-
-### 2) Stability (does $\gamma$ persist across time?)
-
-- When the sample is split into coarse eras (e.g., first vs second half), the estimated $\hat\gamma$ **changes materially** in sign and/or magnitude.
-- Rolling-window estimates show that the relationship is **time-varying**: there are periods where $\hat\gamma$ is positive (sometimes closer to significance) and others where it is near zero or negative, with rolling $p$-values fluctuating widely.
-
-**Interpretation:** A genuine predictive relationship should be at least *directionally stable* across regimes. The observed drift suggests that (i) the effect may be regime-dependent, (ii) the proxy may be picking up unrelated macro variation, or (iii) the in-sample correlation is largely noise.
-
-### 3) Out-of-sample forecasting (incremental value beyond controls)
-
-We evaluate “incremental value” using an expanding-window forecast comparison:
-
-- **Base model (A):** controls only  
-- **Augmented model (B):** controls + sunspots  
-
-Key metric:  
-```math
-R^2_{\text{OOS}} = 1 - \frac{\text{MSFE}_{B}}{\text{MSFE}_{A}}.
-```
----
 ## License
 
 * Sunspot data: SILSO (CC BY-NC 4.0). You must provide attribution and use non-commercially.
