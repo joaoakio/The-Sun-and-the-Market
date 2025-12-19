@@ -154,46 +154,6 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 
 ---
 
-## How to run
-
-### Option A — Local Python
-
-1. Create an environment (recommended).
-2. Install requirements:
-
-   * `pip install -r requirements.txt`
-3. Run the notebook in Jupyter / VS Code.
-
-### Option B — JupyterLite / browser runtimes
-
-If your environment does not allow subprocess-based installs, install packages via the platform’s package manager (or use a prebuilt kernel/environment that includes scientific Python).
-
----
-
-## Repository contents
-
-* `01_sun_and_market.ipynb` — main analysis notebook
-* `requirements.txt` — Python dependencies (for local runs)
-
----
-
-## Notes on math rendering in GitHub Markdown
-
-GitHub renders math using:
-
-* inline: `$...$` (or `$`...`$` when markdown characters conflict)
-* block: `$$ ... $$` **or** fenced blocks:
-
-````
-```math
-... LaTeX ...
-```
-````
-
-If some equations render and others don’t, it’s usually because the failing ones are written as `\(...\)` / `\[...\]`, or are placed in contexts that interfere with parsing. GitHub’s math support and recommended syntax are documented here: “Writing mathematical expressions”. ([GitHub Docs][1])
-
----
-
 ## License / attribution
 
 * Sunspot data: SILSO (CC BY-NC 4.0). You must provide attribution and use non-commercially.
