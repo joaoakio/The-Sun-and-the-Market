@@ -153,12 +153,10 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 
 ---
 
-## License / attribution
+## License
 
 * Sunspot data: SILSO (CC BY-NC 4.0). You must provide attribution and use non-commercially.
 * Market data: Yahoo Finance via `yfinance` (used for prototyping / educational analysis).
-
-````
 
 
 
