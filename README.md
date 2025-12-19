@@ -152,6 +152,25 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 > Interpretation: Under this specification and dataset, sunspots look like an **exploratory feature** rather than a standalone signal. Any claim of predictability would require stronger OOS evidence and stability.
 
 ---
+## Results snapshot (from the current run)
+
+### In-sample (HAC / Newey–West)
+- Estimated $\gamma$ (sunspots) is **positive**, but **not statistically robust** at conventional levels (HAC $p$-value above 5% in the full sample).
+
+### Stability
+- Subsample split suggests **instability**: $\gamma$ changes sign/magnitude across eras.
+- Rolling estimates show $\gamma$ and its HAC $p$-value vary materially over time (limited persistence).
+
+### Out-of-sample forecasting
+- Adding sunspots **does not improve** forecast accuracy:
+  - $\text{MSFE}_B > \text{MSFE}_A$
+  - $R^2_{\text{OOS}} < 0$ (worse than controls-only)
+  - Clark–West test is **not supportive** (one-sided $p$ not small)
+
+### Allocation lens
+- A simple monthly long/cash rule driven by the augmented forecast **does not outperform** buy-and-hold over the evaluated OOS window (lower annualized mean log return and Sharpe in the current run).
+
+---
 
 ## License
 
