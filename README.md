@@ -131,7 +131,7 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 
 
 ---
-## Results snapshot
+## Results
 
 ### In-sample (HAC / Newey–West)
 - Estimated $\gamma$ (sunspots) is **positive**, but **not statistically robust** at conventional levels (HAC $p$-value above 5% in the full sample).
