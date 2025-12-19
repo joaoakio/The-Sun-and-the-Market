@@ -13,12 +13,15 @@ Do sunspots add incremental forecasting power for next-month equity returns once
 We test the nested predictive regression:
 
 - **Model A (controls only):**  
-  \( r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \varepsilon_{t+1} \)
+  $$ r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \varepsilon_{t+1} $$
 
 - **Model B (controls + sunspots):**  
-  \( r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \gamma\,SN_t + \varepsilon_{t+1} \)
+  $$ r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \gamma\,SN_t + \varepsilon_{t+1} $$
 
-**Incremental value** is assessed primarily via **OOS performance** (MSFE, OOS \(R^2\), Clark–West).
+**Incremental value** is assessed primarily via out-of-sample performance (MSFE, OOS $R^2$, Clark–West).
+
+Where the out-of-sample metric is:
+$$ R^2_{\text{OOS}} = 1 - \frac{\text{MSFE}_B}{\text{MSFE}_A}. $$
 
 ---
 
