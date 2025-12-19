@@ -13,7 +13,9 @@ Do sunspots add incremental forecasting power for next-month equity returns once
 We test the nested predictive regression:
 
 - **Model A (controls only):**  
-  $ r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \varepsilon_{t+1} $
+  $$
+  r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \varepsilon_{t+1}
+  $$
 
 - **Model B (controls + sunspots):**  
   $$ r_{t+1} = \alpha + \sum_{j=1}^N \beta_j X_{j,t} + \gamma\,SN_t + \varepsilon_{t+1} $$
