@@ -121,7 +121,7 @@ pos_t = \mathbf{1}\{\hat r_{t+1\mid t} > 0\}, \qquad
 r^{strat}_{t+1} = pos_t \cdot r_{t+1}.
 ```
 
-Because the notebook uses **log returns**, wealth is computed as:
+Wealth is computed as:
 
 ```math
 W_T = \exp\left(\sum_{t\le T} r_t\right),
@@ -131,7 +131,7 @@ normalized to start at 1. This section is intentionally minimal (no trading fric
 
 ---
 
-## Results (from the current notebook run)
+## Results
 
 **In-sample (Model B):**
 
