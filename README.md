@@ -13,7 +13,7 @@ Let $P^{EOM}_t$ be the S&P 500 level at the **end of month $t$** (last trading d
 
 ```math
 r_{t+1} \equiv \log(P^{EOM}_{t+1}) - \log(P^{EOM}_{t}).
-
+```
 
 All predictors are measured using information available **at the end of month $t$** and are used to forecast **$r_{t+1}$** (strict $t \rightarrow t+1$ timing, no look-ahead).
 
